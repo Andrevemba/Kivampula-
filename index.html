@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ge Makeup</title>
+<style>
+  :root{
+    --rose:#c9536b;
+    --rose-deep:#7d2438;
+    --cream:#f7ede7;
+    --ink:#241416;
+    --gold:#b8935a;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  *{box-sizing:inherit;}
+  body{
+    margin:0;background:var(--cream);color:var(--ink);
+    font-family:'Georgia','Iowan Old Style',serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .sans{font-family:-apple-system,'Segoe UI',Roboto,sans-serif;}
+  header{
+    padding:2rem 1.5rem 1rem;display:flex;justify-content:space-between;align-items:center;
+    max-width:1000px;margin:0 auto;
+  }
+  .logo{font-size:1.4rem;letter-spacing:.02em;color:var(--rose-deep);font-weight:bold;}
+  nav a{color:var(--ink);text-decoration:none;margin-left:1.2rem;font-family:-apple-system,sans-serif;font-size:.95rem;}
+  .hero{
+    max-width:1000px;margin:0 auto;padding:3rem 1.5rem 4rem;
+    display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center;
+  }
+  @media(max-width:700px){.hero{grid-template-columns:1fr;padding-top:1rem;}}
+  h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;margin:0 0 1rem;color:var(--rose-deep);}
+  .hero p{font-family:-apple-system,sans-serif;font-size:1.05rem;line-height:1.6;max-width:38ch;color:#4a3236;}
+  .cta{
+    display:inline-block;margin-top:1.6rem;padding:.85rem 1.8rem;background:var(--rose-deep);color:var(--cream);
+    text-decoration:none;border-radius:2px;font-family:-apple-system,sans-serif;font-size:.95rem;
+  }
+  .swatch{
+    aspect-ratio:1;border-radius:50%;
+    background:radial-gradient(circle at 32% 28%, #e9a3b3, var(--rose) 55%, var(--rose-deep) 100%);
+    box-shadow:0 20px 40px -12px rgba(125,36,56,.4);
+  }
+  section{max-width:1000px;margin:0 auto;padding:3rem 1.5rem;}
+  .divider{max-width:1000px;margin:0 auto;height:1px;background:rgba(125,36,56,.15);}
+  h2{font-size:1.7rem;color:var(--rose-deep);margin-bottom:1.6rem;}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+  @media(max-width:700px){.grid3{grid-template-columns:1fr;}}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
+  .gallery div{aspect-ratio:1;border-radius:4px;}
+  @media(max-width:700px){.gallery{grid-template-columns:repeat(2,1fr);}}
+  .card h3{font-family:-apple-system,sans-serif;font-size:1.05rem;margin:0 0 .4rem;color:var(--ink);}
+  .card p{font-family:-apple-system,sans-serif;font-size:.92rem;color:#5c4448;line-height:1.55;margin:0;}
+  .swatchmini{width:44px;height:44px;border-radius:50%;margin-bottom:.9rem;}
+  .contact{background:var(--rose-deep);color:var(--cream);border-radius:4px;}
+  .contact h2{color:var(--cream);}
+  .contact p{font-family:-apple-system,sans-serif;line-height:1.7;font-size:1rem;}
+  .contact a{color:var(--cream);}
+  footer{
+    text-align:center;padding:2rem 1.5rem 3rem;font-family:-apple-system,sans-serif;
+    font-size:.85rem;color:#8a6a6e;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Ge Makeup</div>
+  <nav class="sans">
+    <a href="#servicos">Serviços</a>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Maquilhagem que revela a tua luz</h1>
+    <p>Serviços de maquilhagem profissional em Luanda para casamentos e festas. Cada rosto, uma história.</p>
+    <a class="cta" href="#contacto">Marcar sessão</a>
+  </div>
+  <div class="swatch"></div>
+</div>
+
+<div class="divider"></div>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+  <div class="grid3" style="grid-template-columns:repeat(2,1fr);max-width:640px;">
+    <div class="card">
+      <div class="swatchmini" style="background:#e9a3b3"></div>
+      <h3>Maquilhagem de noiva</h3>
+      <p>Look duradouro pensado para o teu dia especial, com prova incluída.</p>
+    </div>
+    <div class="card">
+      <div class="swatchmini" style="background:#c9536b"></div>
+      <h3>Eventos e festas</h3>
+      <p>Maquilhagem glamorosa para aniversários, formaturas e noites especiais.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="trabalhos">
+  <h2>Trabalhos</h2>
+  <p class="sans" style="max-width:60ch;line-height:1.6;color:#5c4448;margin-top:-1rem;margin-bottom:1.6rem;">
+    Espaço reservado para fotos reais dos serviços já feitos — assim que enviares as imagens, substituo estes espaços.
+  </p>
+  <div class="gallery">
+    <div style="background:linear-gradient(135deg,#e9a3b3,#c9536b);"></div>
+    <div style="background:linear-gradient(135deg,#c9536b,#7d2438);"></div>
+    <div style="background:linear-gradient(135deg,#b8935a,#7d2438);"></div>
+    <div style="background:linear-gradient(135deg,#e9a3b3,#b8935a);"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="sobre">
+  <h2>Sobre a Ge Makeup</h2>
+  <p class="sans" style="max-width:60ch;line-height:1.7;color:#4a3236;">
+    A Ge Makeup nasceu em Angola com um propósito simples: fazer cada pessoa sentir-se confiante na sua própria pele.
+    Trabalhamos com produtos de qualidade, técnicas actualizadas e muito cuidado com cada detalhe.
+  </p>
+</section>
+
+<section id="contacto" class="contact">
+  <h2>Contacto</h2>
+  <p>
+    WhatsApp: +244 9XX XXX XXX<br>
+    E-mail: contacto@jamakeup.co.ao<br>
+    Luanda, Angola
+  </p>
+</section>
+
+<footer>© 2026 Ge Makeup — Luanda, Angola</footer>
+
+</body>
+</html>
